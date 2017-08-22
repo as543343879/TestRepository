@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.embed.swing.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="tariffRoot" prefHeight="465.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="team1.Homvis.tariff.RootController">
+    <children>
+      <ImageView fitHeight="465.0" fitWidth="800.0" pickOnBounds="true">
+         <image>
+            <Image url="@tariffImg/boiler_background.png" />
+         </image>
+      </ImageView>
+        <BorderPane prefHeight="450.0" prefWidth="800.0">
+            <top>
+                <AnchorPane>
+                    <children>
+                        <Label contentDisplay="CENTER" layoutX="343.0" minHeight="-Infinity" prefHeight="25.0" prefWidth="100.0" text="요금조회" BorderPane.alignment="CENTER">
+                            <font>
+                                <Font name="System Bold Italic" size="23.0" />
+                            </font>
+                        </Label>
+                        <ImageView fx:id="exit" fitHeight="30.0" fitWidth="30.0" layoutX="771.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@tariffImg/icon.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+            </top>
+            <left>
+                <VBox fillWidth="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <ImageView fx:id="btnGasFee" fitHeight="140.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@tariffImg/elecNgas_gas_default.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fx:id="btnElectricFee" fitHeight="140.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@tariffImg/elecNgas_lighticon_off.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fx:id="btnWaterFee" fitHeight="140.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@tariffImg/elecNgas_water_default.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </VBox>
+            </left>
+            <center>
+                <StackPane fx:id="changeableStackPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>

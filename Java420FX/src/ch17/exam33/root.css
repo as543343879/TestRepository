@@ -1,0 +1,36 @@
+#vbox1{
+    -fx-border-color:rgba(255,0,0,0.5); 
+}
+
+#vbox2{
+    -fx-background-color:linear-gradient(to bottom right,#000000,#FFFFFF);
+}
+
+#vbox3{
+    -fx-background-radius:50;
+    -fx-background-color:radial-gradient(center 20% 50%, radius 10%, #FF00FF,#000000)
+}
+
+#vbox4{
+    -fx-border-color:skyblue;
+    -fx-backgroud-image:url("images/icon.gif");
+}
+
+#vbox5{
+    -fx-border-color:skyblue;
+    -fx-backgroud-image:url("images/icon.gif");
+    -fx-backgroud-repeat:no-repeat;
+}
+
+#vbox5{
+    -fx-border-color:skyblue;
+    -fx-backgroud-image:url("images/icon.gif");
+    -fx-backgroud-repeat:no-repeat;
+}
+
+#vbox6{
+    -fx-border-color:skyblue;
+    -fx-backgroud-image: url("images/icon.gif");
+    -fx-backgroud-repeat:no-repeat;
+    -fx-backgroud-position:center;
+}

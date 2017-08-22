@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Configuration status="WARN">
+<!-- 로그를 어디에 출력할 것인가를 설정 -->
+<!-- system.out을 이용하여 console에 출력하겠다를 말함 -->
+  <Appenders>
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d{HH:mm:ss}%-5level %logger{2} %M - %msg%n"/>
+    </Console>
+  </Appenders>
+  <!-- 로깅 대상(클래스)을 설정,어떤 클래스에서 발생된 로그를 출력할 것인가 -->
+  <Loggers>
+  <!--<Logger name="com.mycompany.myapp.controller" level="INFO"/> -->
+    <Root level="INFO">
+      <AppenderRef ref="Console"/>
+    </Root>
+  </Loggers>
+</Configuration>

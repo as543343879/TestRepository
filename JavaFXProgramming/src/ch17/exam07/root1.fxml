@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox>
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+               <image>
+                  <Image url="@images/member11.png" />
+               </image>
+            </ImageView>
+            <VBox>
+               <children>
+                  <Label maxWidth="1.7976931348623157E308" style="-fx-background-color: yellow;" text="안녕하세요" textAlignment="CENTER" textFill="#cd2727" VBox.vgrow="ALWAYS" />
+                  <Label maxHeight="1.7976931348623157E308" text="오늘은 비가 오네요. 자바 학습 열심히 하고 있으시죠^^화이팅합니다." wrapText="true" VBox.vgrow="ALWAYS" />
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>

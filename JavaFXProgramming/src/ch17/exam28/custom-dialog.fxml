@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="150.0" prefWidth="400" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView id="icon" fitHeight="50.0" fitWidth="50.0" layoutX="22.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/dialog-info.png" />
+         </image>
+      </ImageView>
+      <Label id="message" layoutX="90.0" layoutY="39.0" text="확인하셨습니까?" />
+      <Button id="btnOk" layoutX="165.0" layoutY="98.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="70.0" text="확인" />
+   </children>
+</AnchorPane>

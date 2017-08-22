@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView id="image" fitHeight="200.0" fitWidth="132.0" pickOnBounds="true" preserveRatio="true" />
+      <VBox prefHeight="200.0" prefWidth="169.0">
+         <children>
+            <Label id="name" maxWidth="1.7976931348623157E308" text="이름" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
+            <ImageView id="scoreImage" fitHeight="42.0" fitWidth="169.0" pickOnBounds="true" />
+            <TextArea id="description" prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </VBox>
+   </children>
+</HBox>

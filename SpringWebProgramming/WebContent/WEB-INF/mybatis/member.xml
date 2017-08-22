@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="member">
+	<insert id="insert">
+		insert into Member
+		(mid,mname,mpassword,mdate,mtel,memail,mage,maddress,moriginalfilename,msavedfilename,mfilecontent)
+		values
+		(#{mid},#{mname},#{mpassword},sysdate,#{mtel},#{memail},#{mage},#{maddress},#{moriginalfilename},#{msavedfilename},#{mfilecontent})
+	</insert>
+
+	<select id="memberSelectPage" resultType="com.mycompany.myapp.dto.Exam12Member">
+	select * from( select rownum as r,mid,mname,mpassword,mdate,mtel,memail,mage,maddress,msavedfilename,moriginalfilename 
+	from (select mid,mname,mpassword,mdate,mtel,memail,mage,maddress,msavedfilename,moriginalfilename from member order by mdate desc) 
+	where rownum&lt;=#{endNum}) where r&gt;=#{startNum} 
+
+	</select>
+	
+	<select id="memberCountAll" resultType="int">
+	select count(*) from member
+	</select>
+	
+	<select id="memberSelectByBno"  parameterType="string" resultType="com.mycompany.myapp.dto.Exam12Member">
+	select * from member where mid=#{mid}
+	</select>
+	
+	<update id="memberUpdate" parameterType="com.mycompany.myapp.dto.Exam12Member">
+	<if test="moriginalfilename!=null">
+	update member set mpassword=#{mpassword},mdate=sysdate,mtel=#{mtel},memail=#{memail},mage=#{mage},maddress=#{maddress},moriginalfilename=#{moriginalfilename},msavedfilename=#{msavedfilename},mfilecontent=#{mfilecontent} where mid=#{mid}
+	</if>
+	<if test="moriginalfilename==null">
+	update member set mpassword=#{mpassword},mdate=sysdate,mtel=#{mtel},memail=#{memail},mage=#{mage},maddress=#{maddress} where mid=#{mid}
+	</if>
+	</update>
+	
+	<delete id="memberDelete" parameterType="string">
+	delete from member where mid=#{mid}
+	</delete>
+	
+	<update id="memberImgDelete" parameterType="string">
+	update member set moriginalfilename='' ,msavedfilename='', mfilecontent='' where mid=#{mid}
+	</update>
+</mapper>

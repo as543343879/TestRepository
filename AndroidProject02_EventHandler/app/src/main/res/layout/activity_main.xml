@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context="com.mycompany.myapp.MainActivity">
+
+    <ImageView
+        android:id="@+id/imgTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="h,1:0.3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/photo1" />
+
+    <Button
+        android:id="@+id/btnImg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="30dp"
+        android:drawableLeft="@android:drawable/star_big_on"
+        android:text="그림1"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgTitle"
+        app:layout_constraintVertical_bias="0.517"
+        android:layout_marginStart="30dp" />
+
+    <Button
+        android:id="@+id/btnImg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:drawableLeft="@android:drawable/stat_sys_vp_phone_call"
+        android:text="그림2"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintLeft_toRightOf="@+id/btnImg1"
+        app:layout_constraintRight_toLeftOf="@+id/btnImg3"
+        app:layout_constraintTop_toBottomOf="@+id/imgTitle"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <Button
+        android:id="@+id/btnImg3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="32dp"
+        android:drawableLeft="@android:drawable/sym_action_call"
+        android:onClick="handleBtnImg3"
+        android:text="그림3"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgTitle"
+        android:layout_marginEnd="32dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgTitle"
+        android:layout_marginStart="30dp">
+
+        <RadioButton
+            android:id="@+id/rbImg1"
+            style="@style/RadioButton1Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="그림1"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rbImg2"
+            style="@style/RadioButton2Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="그림2"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rbImg3"
+            style="@style/RadioButton3Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="handleRbImg3"
+            android:text="그림3"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+</android.support.constraint.ConstraintLayout>

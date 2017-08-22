@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C69B5AA7-E731-17FB-A6EC-8BFEC37DA9E5" name="member">
+<createdBy>Administrator</createdBy>
+<createdTime>2017-07-31 00:29:56 UTC</createdTime>
+<ownerDesignName>최종프로젝트DB설계</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="mid" id="12585740-FE58-7BFC-4A3E-F71024D54AC7">
+<createdBy>Administrator</createdBy>
+<createdTime>2017-07-31 00:32:13 UTC</createdTime>
+<ownerDesignName>최종프로젝트DB설계</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="mname" id="7E3CC4A8-D0D5-CA3B-FC85-361AB02A35B8">
+<createdBy>Administrator</createdBy>
+<createdTime>2017-07-31 00:32:26 UTC</createdTime>
+<ownerDesignName>최종프로젝트DB설계</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="mpassword" id="3D8064B3-0C54-FA22-E797-5396C370A91C">
+<createdBy>Administrator</createdBy>
+<createdTime>2017-07-31 00:32:39 UTC</createdTime>
+<ownerDesignName>최종프로젝트DB설계</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B18D907D-59D5-F938-B786-06A468F12356" name="member_PK">
+<createdBy>Administrator</createdBy>
+<createdTime>2017-07-31 00:37:30 UTC</createdTime>
+<ownerDesignName>최종프로젝트DB설계</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="12585740-FE58-7BFC-4A3E-F71024D54AC7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
